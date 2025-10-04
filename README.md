@@ -63,5 +63,39 @@ The API can easily be integrated with any frontend (React, Angular, or mobile ap
 
 ---
 
-## 🗂️ Project Structure
+## 🗂️ API Endpoints
+#🧍‍♂️ Authentication Routes
+| Method   | Endpoint             | Description                                    |
+| -------- | -------------------- | ---------------------------------------------- |
+| **POST** | `/api/auth/register` | Register a new user                            |
+| **POST** | `/api/auth/login`    | Login and receive a JWT token                  |
+| **GET**  | `/api/auth/me`       | Get current logged-in user details (Protected) |
+
+#🛍️ Product Routes
+| Method     | Endpoint            | Description                                   |
+| ---------- | ------------------- | --------------------------------------------- |
+| **GET**    | `/api/products`     | Get all products                              |
+| **GET**    | `/api/products/:id` | Get single product by ID                      |
+| **POST**   | `/api/products`     | Create new product *(Admin/Seller only)*      |
+| **PUT**    | `/api/products/:id` | Update existing product *(Admin/Seller only)* |
+| **DELETE** | `/api/products/:id` | Delete a product *(Admin/Seller only)*        |
+
+# 🛒 Cart Routes
+| Method     | Endpoint               | Description                               |
+| ---------- | ---------------------- | ----------------------------------------- |
+| **POST**   | `/api/cart/add`        | Add product to cart                       |
+| **GET**    | `/api/cart`            | Get all cart items for the logged-in user |
+| **PUT**    | `/api/cart/update/:id` | Update quantity of a cart item            |
+| **DELETE** | `/api/cart/remove/:id` | Remove product from cart                  |
+
+#📦 Order Routes
+| Method   | Endpoint          | Description                       |
+| -------- | ----------------- | --------------------------------- |
+| **POST** | `/api/orders`     | Create new order from cart        |
+| **GET**  | `/api/orders`     | Get all orders for logged-in user |
+| **GET**  | `/api/orders/:id` | Get specific order by ID          |
+
+
+
+
 
