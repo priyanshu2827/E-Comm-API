@@ -5,23 +5,6 @@ This project provides all core functionalities like user authentication, product
 
 ---
 
-## 📚 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Environment Variables](#environment-variables)
-- [Running the Server](#running-the-server)
-- [API Endpoints](#api-endpoints)
-- [Usage Examples](#usage-examples)
-- [Error Handling](#error-handling)
-- [License](#license)
-- [Contact](#contact)
-
----
-
 ## 🧾 Overview
 
 This project implements a robust **E-Commerce REST API** that supports:
